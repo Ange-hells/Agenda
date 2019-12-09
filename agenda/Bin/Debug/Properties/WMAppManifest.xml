@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="fr-FR" />
-  <App xmlns="" ProductID="{195fb844-f067-44f3-9567-7eb9d2d84077}" Title="agenda" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="agenda author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="agenda" PublisherID="{bdac5ecb-4873-4471-aea5-ab2a5aa74814}">
+  <App xmlns="" ProductID="{d34a7615-3318-4439-882a-fb70d090f140}" Title="Agenda" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Agenda author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Agenda" PublisherID="{75b5898c-a031-406a-baaa-6ab8b83c2c87}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -14,12 +14,12 @@
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="agendaToken" TaskName="_default">
+      <PrimaryToken TokenID="AgendaToken" TaskName="_default">
         <TemplateFlip>
           <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>agenda</Title>
+          <Title>Agenda</Title>
           <BackContent></BackContent>
           <BackBackgroundImageURI></BackBackgroundImageURI>
           <BackTitle></BackTitle>

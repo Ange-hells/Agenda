@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="6feda78a-c7a2-444d-b7d5-793bbfd6c982" Publisher="CN=thomasset" Version="1.0.0.0"/>
+  <Identity Name="0ecd7620-8393-49ef-b152-552e851d13a4" Publisher="CN=fuchs" Version="1.0.0.0"/>
 
-  <mp:PhoneIdentity PhoneProductId="195fb844-f067-44f3-9567-7eb9d2d84077" PhonePublisherId="bdac5ecb-4873-4471-aea5-ab2a5aa74814"/>
+  <mp:PhoneIdentity PhoneProductId="d34a7615-3318-4439-882a-fb70d090f140" PhonePublisherId="75b5898c-a031-406a-baaa-6ab8b83c2c87"/>
 
   <Properties>
-    <DisplayName>agenda</DisplayName>
-    <PublisherDisplayName>thomasset</PublisherDisplayName>
+    <DisplayName>Agenda</DisplayName>
+    <PublisherDisplayName>fuchs</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -22,7 +22,7 @@
 
   <Applications>
     <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
-      <m3:VisualElements DisplayName="agenda" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="agenda" ForegroundText="light" BackgroundColor="#464646">
+      <m3:VisualElements DisplayName="Agenda" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="Agenda" ForegroundText="light" BackgroundColor="#464646">
         <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png"/>
         <m3:SplashScreen Image="Assets\SplashScreen.png"/>
       </m3:VisualElements>

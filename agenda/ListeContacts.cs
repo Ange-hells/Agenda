@@ -3,48 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel;
 using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
-using System.Runtime.Serialization;
-using System.Collections.ObjectModel;
 
-namespace agenda
+namespace Agenda
 {
-	class ListeContacts
-	{
-		private List<Contact> ListeItems;
+    public class ListeContacts
+    {
+        public List<Contact> Items { get; set; }
 
-		public ListeContacts()
-		{
-			ListeItems = new List<Contact> { };
-		}
+        public ListeContacts()
+        {
+            Items = new List<Contact>();
+           
+        }
+        //public void AjouterContact(Contact unContact)
+        //{
+        //    Items.Add(unContact);
+        //}
+        public void Sauvegarder()
+        {
+            using (IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                if (!store.DirectoryExists("Agenda"))
+                {
+                    store.CreateDirectory("Agenda");
+                }
 
-		public List<Contact> Items
-		{
-			get { return ListeItems; }
-			set { ListeItems = value;}
-		}
-
-		public void Sauvgarder()
-		{
-			using (IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication())
-			{
-				if (!store.DirectoryExists("Agenda"))
-				{
-					store.CreateDirectory("Agenda");
-				}
-
-				//creation d'un flux pour ecrire un fichier
-				using (IsolatedStorageFileStream fileStream = store.OpenFile("Agenda/Contact.xml", System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write))
-				{
-					//serialisation XML du flux dans le fichier
-					XmlSerializer Serializer = new XmlSerializer(typeof(ListeContacts));
-					Serializer.Serialize(fileStream, this);
-				}
-
-			}
-
-		}
-	}
+                /////ecrire un fichier
+                using (IsolatedStorageFileStream fileStream = store.OpenFile("Agenda/contact.xml", System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(ListeContacts));
+                    serializer.Serialize(fileStream, this);
+                }
+            }
+        }
+    }
 }

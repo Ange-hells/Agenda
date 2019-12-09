@@ -1,57 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel;
-using System.Runtime.Serialization;
-using System.Xml.Serialization;
 
-namespace agenda
+
+namespace Agenda
 {
-	class Contact : INotifyPropertyChanged
-	{
-		private string leNom;
-		private string lePrenom;
-		private string leMail;
-		private string leMobile;
+   public  class Contact : INotifyPropertyChanged
+    {
+        private string leNom;
+        private string lePrenom;
+        private string leMail;
+        private string leMobile;
 
-		public event PropertyChangedEventHandler PropertyChanged;
+  
 
-		//public Contact()
-		//{ }
+        public Contact()
+        {
+         
+        }
+        //public Contact(string unNom,string unPrenom,string unMail,string unMobile)
+        //{
+        //    leNom = unNom;
+        //    lePrenom = unPrenom;
+        //    leMail = unMail;
+        //    leMobile = unMobile;
+        //}
 
-		public Contact(string unNom, string unPrenom, string unEmail, string unMobile)
-		{
-			leNom = unNom;
-			lePrenom = unPrenom;
-			leMail = unEmail;
-			leMobile = unMobile;
-		}
+        public event PropertyChangedEventHandler PropertyChanged;
 
-		public string Nom
-		{
-			get { return leNom; }
-			set { leNom = value;}
-		}
+        public string Nom{
+            get{ return leNom;}
+            set{
+                leNom = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs(leNom));
+            }
+        }
+        public string Prenom
+        {
+            get { return lePrenom; }
+            set
+            {
+                lePrenom = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs(lePrenom));
+            }
+        }
+        public string Email
+        {
+            get { return leMail; }
+            set
+            {
+                leMail = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs(leMail));
+            }
+        }
+        public string Mobile
+        {
+            get { return leMobile; }
+            set
+            {
+                leMobile = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs(leMobile));
+            }
+        }
 
-		public string prenom
-		{
-			get { return lePrenom; }
-			set { lePrenom = value;}
-		}
 
-		public string mail
-		{
-			get { return leMail; }
-			set { leMail = value;}
-		}
-
-		public string mobile
-		{
-			get { return leMobile; }
-			set { leMobile = value;}
-		}
-	}
-	//PropertyChanged(this, newPropertyChangedEventArgs(propertyName));
+    }
 }

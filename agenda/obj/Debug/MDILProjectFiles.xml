@@ -2,7 +2,7 @@
 <Files>
   <XAPFiles>
     <File>resources.pri</File>
-    <File>agenda.dll</File>
+    <File>Agenda.dll</File>
     <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\Logo.png</File>

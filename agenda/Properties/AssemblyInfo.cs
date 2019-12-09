@@ -6,11 +6,11 @@ using System.Resources;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("agenda")]
+[assembly: AssemblyTitle("Agenda")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Sio-Slam")]
-[assembly: AssemblyProduct("agenda")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Agenda")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("6feda78a-c7a2-444d-b7d5-793bbfd6c982")]
+[assembly: Guid("0ecd7620-8393-49ef-b152-552e851d13a4")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //
@@ -32,6 +32,6 @@ using System.Resources;
 //
 // Vous pouvez spécifier toutes les valeurs ou indiquer des numéros de révision et de build par défaut 
 // en utilisant '*', comme indiqué ci-dessous :
-[assembly: AssemblyVersion("1.10.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("fr-FR")]

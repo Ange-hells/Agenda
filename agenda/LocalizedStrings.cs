@@ -1,14 +1,14 @@
-﻿using agenda.Resources;
+﻿using Agenda.Resources;
 
-namespace agenda
+namespace Agenda
 {
-	/// <summary>
-	/// Permet d'accéder aux ressources de chaîne.
-	/// </summary>
-	public class LocalizedStrings
-	{
-		private static AppResources _localizedResources = new AppResources();
+    /// <summary>
+    /// Permet d'accéder aux ressources de chaîne.
+    /// </summary>
+    public class LocalizedStrings
+    {
+        private static AppResources _localizedResources = new AppResources();
 
-		public AppResources LocalizedResources { get { return _localizedResources; } }
-	}
+        public AppResources LocalizedResources { get { return _localizedResources; } }
+    }
 }
