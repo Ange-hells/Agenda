@@ -1,10 +1,9 @@
 # Agenda
-_(juste en dessous des badges sympatiques à placer)_
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
  [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](http://forthebadge.com)
 
-Une petite description du projet
+Application mobile Windows phone 8.1 de gestion de contacte et de rendez-vous
 
 ## Pour commencer
 
@@ -12,11 +11,7 @@ Entrez ici les instructions pour bien débuter avec votre projet...
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
+Un smartphone sous windows phone 8.1.
 
 ### Installation
 
