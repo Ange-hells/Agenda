@@ -1,7 +1,6 @@
 # Agenda
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
- [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](http://forthebadge.com)
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Ange-hells/Agenda?style=for-the-badge"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Ange-hells/Agenda?style=for-the-badge">
 
 Application mobile Windows phone 8.1 de gestion de contacte et de rendez-vous
 
